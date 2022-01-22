@@ -120,7 +120,7 @@ body{
 				color:#aaa;
 				font-size: var(--W1);
 				font-family: 'Fira Sans', sans-serif;
-				line-height: 5vh;
+				//line-height: 5vh;
 				opacity:0;
 				transition: top ease-out 0.7s, opacity linear 0.7s;
 				//background:red;
@@ -133,7 +133,7 @@ body{
 				width: 50%;
 				font-size: var(--W2);
 				font-family: 'Fira Sans', sans-serif;
-				line-height: 5vh;
+				//line-height: 5vh;
 				opacity:0;
 				transition: top ease-out 0.7s, opacity ease-out 0.7s;
 				//background:red;
