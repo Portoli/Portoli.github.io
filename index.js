@@ -72,11 +72,11 @@ $(document).ready(function () {
   }, 5000);
   setTimeout(function () {
     $("#welcome1").css("opacity", "1");
-    $("#welcome1").css("top", "45%");
+    $("#welcome1").css("top", "48%");
   }, 6000);
   setTimeout(function () {
     $("#welcome2").css("opacity", "1");
-    $("#welcome2").css("top", "52%");
+    $("#welcome2").css("top", "55%");
   }, 6200);
   setTimeout(function () {
     $("#welcome3").css("opacity", "1");
