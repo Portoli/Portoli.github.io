@@ -185,7 +185,7 @@ $(document).ready(function () {
       $("#aboutMe2").css("top", "30%");
     }, 3100);
     setTimeout(function () {
-      $("#skillsContainer").css("top", "49%");
+      $("#skillsContainer").css("top", "55%");
       $("#skillsContainer").css("opacity", "1");
       setTimeout(function () {
         $("#Cpp .skillsRate").css("background-position", "40% 0%");
