@@ -1,0 +1,88 @@
+#menuContainer{
+	position: fixed;
+	top: 0;
+	right: 0;
+	height: 80px;
+	//width: 300px;
+	z-index:99;
+	transition: right ease-in-out 1s;
+	background: black;
+}
+	#menuColumn{
+		position: absolute;
+		top:0px;
+		right: 0;
+		//height: calc(80px*3);
+		//width: 300px;
+		background: black;
+		overflow: hidden;
+		border-radius:0 0 0 30px;
+		display: flex;
+		justify-content: right;
+	}
+		.menuOptions{
+			height: 40px;
+			width: 50px;
+			padding: 10px;
+			padding-left: 20px;
+			padding-right: 20px;
+			margin: 0px;
+			//background: black;
+			color: #bbb;
+			text-align: center;
+			font-size: 30px;
+			line-height: 50px;
+			transition: width ease-in-out 0.2s;
+		}
+			.menuOptions:hover{
+				width: 100px;
+			}
+			.menuOptionsIcon{
+				height: 100%;
+				width: 100%;
+				transition: opacity ease-in-out 0.5s, transform ease-in-out 0.5s;
+			}
+				.menuOptions:hover .menuOptionsIcon{
+					opacity: 0;
+					transform: scale(90%);
+				}
+				#IHome{
+					background-image: url('img/+/Home.png');
+					background-size: 50px 100%;
+					background-position: center;
+					background-repeat: no-repeat;
+					filter: invert(100%);
+				}
+				#IWork{
+					background-image: url('img/+/Gear.png');
+					background-size: 50px 100%;
+					background-position: center;
+					background-repeat: no-repeat;
+					filter: invert(100%);
+				}
+				#IContact{
+					background-image: url('img/+/Mail.png');
+					background-size: 50px 100%;
+					background-position: center;
+					background-repeat: no-repeat;
+					filter: invert(100%);
+				}
+			.menuOptionsName{
+				position: relative;
+				top: -110%;
+				//left: 0;
+				width: 100%;
+				color: #fff;
+				text-align: center;
+				font-size: 30px;
+				line-height: 50px;
+				opacity: 0;
+				transform: scale(90%);
+				transition: opacity ease-out 0.3s, transform ease-in-out 0.3s;
+			}
+				.menuOptions:hover .menuOptionsName{
+					opacity: 1;
+					cursor: pointer;
+					transform: scale(100%);
+					transition: opacity ease-out 1s, transform ease-in-out 0.5s;
+				}

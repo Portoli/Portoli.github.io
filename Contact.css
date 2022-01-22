@@ -1,0 +1,85 @@
+body{
+	//padding:0;
+	margin: 0;
+}
+#loadScreen{
+	position: absolute;
+	top: 0;
+	z-index: 100;
+	height: 100vh;
+	width: 100vw;
+	background-color: rgb(0,0,0,1);
+	opacity: 1;
+	transition: opacity ease-in-out 1s;
+}
+#container{
+	position: absolute;
+	top: 0;
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+	background: black;
+	overflow: hidden;
+}
+	#filteringDiv{
+		filter: url('#blur') contrast(15);
+	}
+	#WhiteCircle{
+		position: absolute;
+		top: 38%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		height: 400px;
+		width: 600px;
+		background: white;
+		border-radius: 300px;
+	}
+	#bg{
+		height: 100vh;
+		width: 100vw;
+		background: black;
+	}
+	#conntactText{
+		position: absolute;
+		top: 26%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		font-size: 10vh;
+		color: #000;
+		user-select: none;
+	}
+	#emailText{
+		position: absolute;
+		top: 38%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 30%;
+		font-size: 4vh;
+		text-align: center;
+		color: #000;
+	}
+	#discordText{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 15%;
+		font-size: 4vh;
+		text-align: center;
+		color: #000;
+	}
+	
+@keyframes drawing{
+	0% {filter: url("#draw1");}
+	25% {filter: url("#draw2");}
+	50% {filter: url("#draw3");}
+	75% {filter: url("#draw4");}
+	100% {filter: url("#draw5");}
+}
+@keyframes flawing{
+	0% {filter: url("#draw1");}
+	25% {filter: url("#draw2");}
+	50% {filter: url("#draw3");}
+	75% {filter: url("#draw4");}
+	100% {filter: url("#draw5");}
+}

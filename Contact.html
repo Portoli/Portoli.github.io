@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="keywords" contetent="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chome=1" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font-family: 'Fira Sans', sans-serif;-->
+
+    <link rel="stylesheet" href="Contact.css" />
+    <link rel="stylesheet" href="Element-Menu.css" />
+  </head>
+  <body>
+    <div id="menuContainer">
+      <div id="menuColumn">
+        <div id="MHome" class="menuOptions">
+          <div id="IHome" class="menuOptionsIcon"></div>
+          <div id="THome" class="menuOptionsName">Home</div>
+        </div>
+        <div id="MWork" class="menuOptions">
+          <div id="IWork" class="menuOptionsIcon"></div>
+          <div id="TWork" class="menuOptionsName">Work</div>
+        </div>
+        <div id="MContact" class="menuOptions">
+          <div id="IContact" class="menuOptionsIcon"></div>
+          <div id="TContact" class="menuOptionsName">Contact</div>
+        </div>
+      </div>
+    </div>
+    <div id="loadScreen"></div>
+    <div id="container">
+      <div id="filteringDiv">
+        <div id="WhiteCircle"></div>
+        <canvas id="bg"></canvas>
+      </div>
+      <div id="conntactText">Contact</div>
+      <div id="emailText">Email: jordan.piernikowski@gmail.com</div>
+      <div id="discordText">Discord: Portoli#2889</div>
+    </div>
+    <script
+      language="JavaScript"
+      type="text/javascript"
+      src="jquery-3.6.0.min.js"
+    ></script>
+    <script type="module" src="Element-Menu.js"></script>
+    <script type="module" src="Contact.js"></script>
+
+    <svg>
+      <defs>
+        <filter id="blur">
+          <feTurbulence baseFrequency="0.02" numOctaves="3" seed="0" />
+          <feDisplacementMap
+            in="SourceGraphic"
+            in2="noise"
+            scale="1"
+            result="wave"
+          />
+          <feGaussianBlur in="wave" stdDeviation="60" result="blur" />
+        </filter>
+        <filter id="draw1">
+          <feTurbulence baseFrequency="0.02" numOctaves="3" seed="0" />
+          <feDisplacementMap in="SourceGraphic" in2="noise" scale="9" />
+        </filter>
+        <filter id="draw2">
+          <feTurbulence baseFrequency="0.02" numOctaves="3" seed="0" />
+          <feDisplacementMap in="SourceGraphic" in2="noise" scale="5" />
+        </filter>
+        <filter id="draw3">
+          <feTurbulence baseFrequency="0.12" numOctaves="3" seed="0" />
+          <feDisplacementMap in="SourceGraphic" in2="noise" scale="3" />
+        </filter>
+        <filter id="draw4">
+          <feTurbulence baseFrequency="0.02" numOctaves="3" seed="0" />
+          <feDisplacementMap in="SourceGraphic" in2="noise" scale="7" />
+        </filter>
+        <filter id="draw5">
+          <feTurbulence baseFrequency="0.02" numOctaves="3" seed="0" />
+          <feDisplacementMap in="SourceGraphic" in2="noise" scale="8" />
+        </filter>
+      </defs>
+    </svg>
+  </body>
+</html>

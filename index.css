@@ -1,0 +1,441 @@
+body{
+	//padding:0;
+	margin: 0;
+}
+#loadScreen{
+	position: absolute;
+	top: 0;
+	z-index: 100;
+	height: 100vh;
+	width: 100vw;
+	background-color: rgb(0,0,0,1);
+	opacity:1;
+	transition: opacity ease-in-out 1s;
+}
+#container{
+	position: absolute;
+	top: 0;
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+}
+	#slideDiv{
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 200%;
+		overflow: hidden;
+		transition: none;
+	}
+		#startScreen{
+			position: absolute;
+			top: 0;
+			height: 100%;
+			width: 50%;
+			background-image: url('img/+/sphereDiv.png');
+			background-size: 100% 100%;
+			opacity:0;
+			transition: opacity ease-in-out 1s;
+		}
+			#Div1_hide{
+				position:absolute;
+				top: 0%;
+				left: 0%;
+				height: 200%;
+				width: 47%;
+				background: black;
+				opacity: 0;
+				transition: opacity ease-out 0.5s;
+			}
+			#buttonConteiner{
+				position:absolute;
+				top: 80%;
+				right: 5%;
+				height: 180px;
+				width: 180px;
+				opacity: 0;
+				transition: opacity ease-out 0.5s;
+			}
+				#buttonCanvas{
+					position:relative;
+					height: 100%;
+					width: 100%;
+					//background: rgb(0,0,0,1);
+				}
+				#Button{
+					position:absolute;
+					top: 50%;
+					left: 50.5%;
+					height: 75%;
+					width: 75%;
+					transform: translate(-50%,-50%);
+					background-image: radial-gradient(rgb(0,0,0,1) 40%, rgb(0,0,0,0) 70%);
+				}
+				#inButton{
+					position:absolute;
+					top: 50%;
+					left: 50%;
+					height: 30%;
+					width: 66.6%;
+					transform: translate(-50%,-50%);
+					color:#666;
+					font-size: 3.5vh;
+					font-weight:900;
+					text-align:center;
+					line-height: 3.5vh;
+					//background: red;
+					font-family: 'Oswald', sans-serif;
+					user-select: none;
+				}
+					#inButton:hover{
+						cursor: pointer;
+						color:#fff;
+					}
+			#welcome1{
+				position: absolute;
+				top: 48%;
+				left: 48%;
+				color:#aaa;
+				font-size: 4vh;
+				font-family: 'Fira Sans', sans-serif;
+				line-height: 5vh;
+				opacity:0;
+				transition: top ease-out 0.7s, opacity linear 0.7s;
+				//background:red;
+			}
+			#welcome2{
+				position: absolute;
+				top: 55%;
+				left: 48%;
+				color:#fff;
+				width: 50%;
+				font-size: 8vh;
+				font-family: 'Fira Sans', sans-serif;
+				line-height: 5vh;
+				opacity:0;
+				transition: top ease-out 0.7s, opacity ease-out 0.7s;
+				//background:red;
+			}
+			#welcome3{
+				position: absolute;
+				top: 54%;
+				left: 48%;
+				width: 48%;
+				margin-top: 8%;
+				color: #aaa;
+				font-size: 3vh;
+				font-family: 'Fira Sans', sans-serif;
+				font-weight: 300;
+				line-height: 3.5vh;
+				opacity:0;
+				transition: top ease-out 0.7s, opacity ease-out 0.7s;
+				//background:red;
+			}
+			#myPhoto{
+				position: absolute;
+				top: 11%;
+				right: 7%;
+				height: 55%;
+				width: 21%;
+				background-image: url('img/photo/JP5-Poly2.png');
+				background-size: 100% 100%;
+			}
+		#secondDiv{
+			position: absolute;
+			top: 0;
+			left: 50%;
+			height: 100vh;
+			width: 100vw;
+			background-image: url("img/+/secondDiv2.png");
+			background-size: 100% 100%;
+			//background:green;
+		}
+			#Div2_hide{
+				position:absolute;
+				top: 0%;
+				left: 45%;
+				height: 200%;
+				width: 55%;
+				background: black;
+				opacity: 1;
+				transition: opacity ease-out 0.5s;
+			}
+			#buttonConteiner2{
+				position: absolute;
+				z-index: 10;
+				top: 84.5%;
+				left: 0%;
+				height: 150px;
+				width: 150px;
+				opacity: 0;
+				transition: top ease-out 0.5s, opacity ease-out 0.5s;
+			}
+				#buttonCanvas2{
+					position: relative;
+					height: 100%;
+					width: 100%;
+					//background: rgb(0,0,0,1);
+				}
+				#Button2{
+					position: absolute;
+					top: 50%;
+					left: 50.5%;
+					height: 75%;
+					width: 75%;
+					transform: translate(-50%,-50%);
+					background-image: radial-gradient(rgb(0,0,0,1) 40%, rgb(0,0,0,0) 70%);
+				}
+				#inButton2{
+					position:absolute;
+					top: 50%;
+					left: 50%;
+					height: 30%;
+					width: 66.6%;
+					transform: translate(-50%,-50%);
+					color: #666;
+					font-size: 3vh;
+					font-weight:900;
+					text-align: center;
+					line-height: 3vh;
+					//background: red;
+					font-family: 'Oswald', sans-serif;
+					user-select: none;
+				}
+					#inButton2:hover{
+						cursor: pointer;
+						color: #fff;
+					}
+			#buttonConteiner3{
+				position: absolute;
+				z-index: 10;
+				top: 84.5%;
+				left: 45%;
+				height: 150px;
+				width: 150px;
+				opacity: 0;
+				transition: top ease-out 0.5s, opacity ease-out 0.5s;
+			}
+				#buttonCanvas3{
+					position: relative;
+					height: 100%;
+					width: 100%;
+					//background: rgb(0,0,0,1);
+				}
+				#Button3{
+					position: absolute;
+					top: 50%;
+					left: 50.5%;
+					height: 75%;
+					width: 75%;
+					transform: translate(-50%,-50%);
+					background-image: radial-gradient(rgb(0,0,0,1) 40%, rgb(0,0,0,0) 70%);
+				}
+				#inButton3{
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					height: 30%;
+					width: 66.6%;
+					transform: translate(-50%,-50%);
+					color: #666;
+					font-size: 3vh;
+					font-weight:900;
+					text-align: center;
+					line-height: 3vh;
+					//background: red;
+					font-family: 'Oswald', sans-serif;
+					user-select: none;
+				}
+					#inButton3:hover{
+						cursor: pointer;
+						color: #fff;
+					}
+			#aboutMeTheme{
+				position: absolute;
+				top: 11%;
+				left: 0;
+				height: 100px;
+				width: 46%;
+				color: #ccc;
+				text-align: center;
+				font-size: 6vh;
+				font-family: 'Fira Sans', sans-serif;
+				font-weight: 600;
+				line-height: 6.5vh;
+				opacity: 0;
+				transition: top ease-out 0.7s, opacity linear 0.7s;
+				//background: red;
+			}
+			.aboutMe{
+				color: #aaa;
+				font-size: 3vh;
+				font-family: 'Fira Sans', sans-serif;
+				font-weight: 300;
+				line-height: 3.5vh;
+				//background: red;
+				opacity: 0;
+			}
+			#aboutMe1{
+				position: absolute;
+				top: 19%;
+				left: 6%;
+				width: 38%;
+				
+				opacity: 0;
+				transition: top ease-out 0.7s, opacity linear 0.7s;
+				//background: red;
+			}
+			#aboutMe2{
+				position: absolute;
+				top: 33%;
+				left: 6%;
+				width: 38%;
+				
+				opacity: 0;
+				transition: top ease-out 0.7s, opacity linear 0.7s;
+				//background: red;
+			}
+			#skillsContainer{
+				position: absolute;
+				top: 54%;
+				left: 3%;
+				height: 40%;
+				width: 38%;
+				opacity: 0;
+				
+				//background: #440010;
+				color: #ddd;
+				font-family: 'Fira Sans', sans-serif;
+				font-size: 3vh;
+				font-weight: 300;
+				
+				display: flex;
+				justify-content: space-around;
+				
+				transition: top ease-out 0.7s, opacity linear 0.7s;
+			}
+				#leftSkills, #rightSkills{
+					width: 50%;
+				}
+				.skills{
+					height: 19%;
+					width: 99%;
+					margin: 0.9%;
+					//background: rgb(0, 90, 0, 0.2);
+					
+					display: flex;
+					justify-content: space-around;
+				}
+					.skillsName{
+						height: 100%;
+						width: 50%;
+						//background: rgb(0, 90, 0, 0.2);
+						text-align: right;
+						line-height: 7vh;
+						user-select: none;
+					}
+					.skillsRate{
+						height: 100%;
+						width: 50%;
+						font-size: 4.5vw;
+						font-family: none;
+						font-weight: 900;
+						line-height: 5vh;
+						text-align: center;
+						user-select: none;
+						
+						background-image: linear-gradient(to right, red 26%, gray 27%);
+						background-size: 100% 100%;
+						//27,43,58,74;
+						background-repeat: no-repeat;
+						-webkit-background-clip: text;
+						-webkit-text-fill-color: transparent;
+						
+						//background: rgb(0, 90, 0, 0.2);
+					}
+					#Cpp .skillsRate{
+						background-image: linear-gradient(to right, #ddd 49%, #555 50%);
+						background-size: 200% 200%;
+						background-position: 100% 0%;
+						transition: background-position linear 1s;
+					}
+					#HTML .skillsRate{
+						background-image: linear-gradient(to right, #ddd 49%, #555 50%);
+						background-size: 200% 200%;
+						background-position: 100% 0%;
+						transition: background-position linear 1s;
+					}
+					#CSS .skillsRate{
+						background-image: linear-gradient(to right, #ddd 49%, #555 50%);
+						background-size: 200% 200%;
+						background-position: 100% 0%;
+						transition: background-position linear 1s;
+					}
+					#JS .skillsRate{
+						background-image: linear-gradient(to right, #ddd 49%, #555 50%);
+						background-size: 200% 200%;
+						background-position: 100% 0%;
+						transition: background-position linear 1s;
+					}
+					#PHP .skillsRate{
+						background-image: linear-gradient(to right, #ddd 49%, #555 50%);
+						background-size: 200% 200%;
+						background-position: 100% 0%;
+						transition: background-position linear 1s;
+					}
+					
+					#MySQL .skillsRate{
+						background-image: linear-gradient(to right, #ddd 49%, #555 50%);
+						background-size: 200% 200%;
+						background-position: 100% 0%;
+						transition: background-position linear 1s;
+					}
+					#JQ .skillsRate{
+						background-image: linear-gradient(to right, #ddd 49%, #555 50%);
+						background-size: 200% 200%;
+						background-position: 100% 0%;
+						transition: background-position linear 1s;
+					}
+					#THREE .skillsRate{
+						background-image: linear-gradient(to right, #ddd 49%, #555 50%);
+						background-size: 200% 200%;
+						background-position: 100% 0%;
+						transition: background-position linear 1s;
+					}
+					#NODE .skillsRate{
+						background-image: linear-gradient(to right, #ddd 49%, #555 50%);
+						background-size: 200% 200%;
+						background-position: 100% 0%;
+						transition: background-position linear 1s;
+					}
+					#BOOTSTRAP .skillsRate{
+						background-image: linear-gradient(to right, #ddd 49%, #555 50%);
+						background-size: 200% 200%;
+						background-position: 100% 0%;
+						transition: background-position linear 1s;
+					}
+				
+				#instraction{
+					position: absolute;
+					top: 104%;
+					left: 57%;
+					transform: translate(-50%,-50%);
+					font-size: 2vh;
+					font-family: 'Fira Sans', sans-serif;
+					animation: blink 1s linear infinite;
+				}
+					#instraction a:link{
+						color: #ff7777;
+					}
+					#instraction a:hover{
+						color: #7777ff;
+					}
+					#instraction a:visited{
+						color: #bbbbbb;
+					}
+@keyframes blink{
+	0% {color: red;}
+	50% {color: #ddd;}
+	100% {color: red;}
+}
