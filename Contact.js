@@ -23,6 +23,13 @@ $(document).ready(function () {
     flowField.animate();
     flowField.centerRemove = saveCenterRemove;
     flowField.centerSlide = saveCenterSlide;
+
+    mouse.radius = Math.floor(c.height / 5);
+    this.circle1R = Math.floor(c.height / 4);
+    if (c.height > c.width) {
+      mouse.radius = Math.floor(c.width / 5);
+      this.circle1R = Math.floor(c.width / 4);
+    }
   });
 
   $("#buttonCenterRemove").on("click", function () {
@@ -43,7 +50,7 @@ var ctx = c.getContext("2d");
 const mouse = {
   x: 0,
   y: 0,
-  radius: 200,
+  radius: Math.floor(c.height / 5),
 };
 
 window.addEventListener("mousemove", function (event) {
@@ -80,7 +87,7 @@ class FlowFieldEffect {
 
     this.#ctx.strokeStyle = this.gradient;
     this.circle1Pos = [this.#width * 0.5, this.#height * 0.4];
-    this.circle1R = 250;
+    this.circle1R = Math.floor(c.height / 4);
     this.circle1A = 0;
   }
   circleMove() {

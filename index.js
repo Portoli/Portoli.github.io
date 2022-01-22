@@ -1,11 +1,49 @@
 import * as THREE from "../build/three.module.js";
 import { OrbitControls } from "./jsm/controls/OrbitControls.js";
 import Object_ButtonLineMesh from "./Module-DecoButton.js";
+
 $(document).ready(function () {
+  let screenScale,
+    pxHeight = 950,
+    pxWidth = 1940,
+    screenPos;
   var mouseEvent;
   $(document).mousemove(function (event) {
     mouseEvent = event;
   });
+
+  Resize();
+
+  $(window).resize(function () {
+    Resize();
+  });
+
+  function Resize() {
+    let cssProperty = document.documentElement.style;
+    screenScale = ($(window).height() / 950) * 0.999;
+
+    console.log(screenScale);
+
+    if (screenScale <= 0.5) screenScale = 0.5;
+    if (screenScale >= 1.1) screenScale = 1.1;
+    screenPos = ($(window).width() - pxWidth * screenScale) / 2;
+    if (screenPos <= 0) screenPos = 0;
+
+    $("#container").css("left", screenPos + "px");
+    $("#container").css("height", pxHeight * screenScale + "px");
+    $("#container").css("width", pxWidth * screenScale + "px");
+
+    cssProperty.setProperty("--ButtonsT", 30 * screenScale + "px");
+    cssProperty.setProperty("--MenuText", 25 * screenScale + "px");
+    cssProperty.setProperty("--W1", 38 * screenScale + "px");
+    cssProperty.setProperty("--W2", 76 * screenScale + "px");
+    cssProperty.setProperty("--W3", 29 * screenScale + "px");
+    cssProperty.setProperty("--AMT", 57 * screenScale + "px");
+    cssProperty.setProperty("--AM12", 29 * screenScale + "px");
+    cssProperty.setProperty("--SkillN", 29 * screenScale + "px");
+    cssProperty.setProperty("--SkillB", 86 * screenScale + "px");
+    cssProperty.setProperty("--SkillI", 19 * screenScale + "px");
+  }
 
   setInterval(function () {
     if (typeof mouseEvent == "object") {
@@ -125,7 +163,7 @@ $(document).ready(function () {
   $("#inButton").mousedown(function () {
     nextCircle.lineColor = "rgb(0,90,0";
     $("#slideDiv").css("transition", "left ease-in-out 2s");
-    $("#slideDiv").css("left", "-100vw");
+    $("#slideDiv").css("left", "-100%");
     setTimeout(function () {
       camera.position.set(-5, -1.2, 6);
       $("#slideDiv").css("transition", "none");
@@ -556,10 +594,15 @@ function pointOrbitPosG2(index = 0, alpha1 = 0.01) {
 //////////Render///////////////
 ///////////////////////////////
 function onWindowResize() {
-  camera.aspect = window.innerWidth / window.innerHeight;
+  camera.aspect =
+    document.getElementById("container").offsetWidth /
+    document.getElementById("container").offsetHeight;
   camera.updateProjectionMatrix();
 
-  renderer.setSize(window.innerWidth, window.innerHeight);
+  renderer.setSize(
+    document.getElementById("container").offsetWidth,
+    document.getElementById("container").offsetHeight
+  );
 }
 
 const animate = function () {

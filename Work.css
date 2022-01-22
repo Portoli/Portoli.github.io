@@ -29,16 +29,16 @@ body{
 		top: 16%;
 		left: 50%;
 		transform: translate(-50%, -50%);
-		font-size: 10vh;
+		font-size: 10vmin;
 		color: #ddd;
 	}
 	#expleText{
 		position: absolute;
-		top: 28%;
+		top: 30%;
 		left: 50%;
 		transform: translate(-50%, -50%);
 		width: 30%;
-		font-size: 4vh;
+		font-size: 4vmin;
 		text-align: center;
 		color: #444;
 	}

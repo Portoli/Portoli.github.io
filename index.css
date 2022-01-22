@@ -1,6 +1,21 @@
+/*  */
+:root{
+	--ButtonsT: 33px;
+	--MenuText: 30px;//menu n
+	--W1: 38px;
+	--W2: 76px;
+	--W3: 29px;
+	--AMT: 57px;
+	--AM12: 29px;
+	--SkillN: 29px;
+	--SkillB: 86px;
+	--SkillI: 19px;
+}
+
 body{
-	//padding:0;
+	padding:0;
 	margin: 0;
+	background: black;
 }
 #loadScreen{
 	position: absolute;
@@ -9,15 +24,20 @@ body{
 	height: 100vh;
 	width: 100vw;
 	background-color: rgb(0,0,0,1);
-	opacity:1;
+	opacity: 1;
 	transition: opacity ease-in-out 1s;
 }
 #container{
 	position: absolute;
 	top: 0;
+	//left: 50%;
+	//transform: translate(-50%,-50%);
 	height: 100vh;
 	width: 100vw;
 	overflow: hidden;
+	box-sizing: border-box;
+	border: solid 1px #555;
+	border-width: 0 2px 0 2px;
 }
 	#slideDiv{
 		position: absolute;
@@ -31,6 +51,7 @@ body{
 		#startScreen{
 			position: absolute;
 			top: 0;
+			left: 0;
 			height: 100%;
 			width: 50%;
 			background-image: url('img/+/sphereDiv.png');
@@ -50,10 +71,10 @@ body{
 			}
 			#buttonConteiner{
 				position:absolute;
-				top: 80%;
+				top: 81.5%;
 				right: 5%;
-				height: 180px;
-				width: 180px;
+				height: 18%;
+				width: 9%;
 				opacity: 0;
 				transition: opacity ease-out 0.5s;
 			}
@@ -80,10 +101,10 @@ body{
 					width: 66.6%;
 					transform: translate(-50%,-50%);
 					color:#666;
-					font-size: 3.5vh;
+					font-size: var(--ButtonsT);
 					font-weight:900;
 					text-align:center;
-					line-height: 3.5vh;
+					line-height: var(--ButtonsT);
 					//background: red;
 					font-family: 'Oswald', sans-serif;
 					user-select: none;
@@ -145,8 +166,8 @@ body{
 			position: absolute;
 			top: 0;
 			left: 50%;
-			height: 100vh;
-			width: 100vw;
+			height: 100%;
+			width: 50%;
 			background-image: url("img/+/secondDiv2.png");
 			background-size: 100% 100%;
 			//background:green;
@@ -164,10 +185,10 @@ body{
 			#buttonConteiner2{
 				position: absolute;
 				z-index: 10;
-				top: 84.5%;
+				top: 84%;
 				left: 0%;
-				height: 150px;
-				width: 150px;
+				height: 18%;
+				width: 9%;
 				opacity: 0;
 				transition: top ease-out 0.5s, opacity ease-out 0.5s;
 			}
@@ -194,10 +215,10 @@ body{
 					width: 66.6%;
 					transform: translate(-50%,-50%);
 					color: #666;
-					font-size: 3vh;
+					font-size: var(--ButtonsT);
 					font-weight:900;
 					text-align: center;
-					line-height: 3vh;
+					line-height: var(--ButtonsT);
 					//background: red;
 					font-family: 'Oswald', sans-serif;
 					user-select: none;
@@ -209,10 +230,10 @@ body{
 			#buttonConteiner3{
 				position: absolute;
 				z-index: 10;
-				top: 84.5%;
-				left: 45%;
-				height: 150px;
-				width: 150px;
+				top: 84%;
+				left: 43%;
+				height: 18%;
+				width: 9%;
 				opacity: 0;
 				transition: top ease-out 0.5s, opacity ease-out 0.5s;
 			}
@@ -239,10 +260,10 @@ body{
 					width: 66.6%;
 					transform: translate(-50%,-50%);
 					color: #666;
-					font-size: 3vh;
+					font-size: var(--ButtonsT);
 					font-weight:900;
 					text-align: center;
-					line-height: 3vh;
+					line-height: var(--ButtonsT);
 					//background: red;
 					font-family: 'Oswald', sans-serif;
 					user-select: none;
@@ -254,32 +275,32 @@ body{
 			#aboutMeTheme{
 				position: absolute;
 				top: 11%;
-				left: 0;
+				left: 2%;
 				height: 100px;
 				width: 46%;
 				color: #ccc;
 				text-align: center;
-				font-size: 6vh;
+				font-size: var(--AMT);
 				font-family: 'Fira Sans', sans-serif;
 				font-weight: 600;
-				line-height: 6.5vh;
+				//line-height: 6vh;
 				opacity: 0;
 				transition: top ease-out 0.7s, opacity linear 0.7s;
 				//background: red;
 			}
 			.aboutMe{
 				color: #aaa;
-				font-size: 3vh;
+				font-size: var(--AM12);
 				font-family: 'Fira Sans', sans-serif;
 				font-weight: 300;
-				line-height: 3.5vh;
+				//line-height: 3.5vh;
 				//background: red;
 				opacity: 0;
 			}
 			#aboutMe1{
 				position: absolute;
 				top: 19%;
-				left: 6%;
+				left: 8%;
 				width: 38%;
 				
 				opacity: 0;
@@ -289,7 +310,7 @@ body{
 			#aboutMe2{
 				position: absolute;
 				top: 33%;
-				left: 6%;
+				left: 8%;
 				width: 38%;
 				
 				opacity: 0;
@@ -307,7 +328,7 @@ body{
 				//background: #440010;
 				color: #ddd;
 				font-family: 'Fira Sans', sans-serif;
-				font-size: 3vh;
+				font-size: var(--SkillN);
 				font-weight: 300;
 				
 				display: flex;
@@ -328,20 +349,22 @@ body{
 					justify-content: space-around;
 				}
 					.skillsName{
-						height: 100%;
+						padding-top: 4%;
+						height: 40%;
 						width: 50%;
 						//background: rgb(0, 90, 0, 0.2);
 						text-align: right;
-						line-height: 7vh;
+						//line-height: 7vh;
 						user-select: none;
 					}
 					.skillsRate{
 						height: 100%;
 						width: 50%;
-						font-size: 4.5vw;
+						font-size:  var(--SkillB);
+						padding-top: 6%;
 						font-family: none;
 						font-weight: 900;
-						line-height: 5vh;
+						line-height: 1px;
 						text-align: center;
 						user-select: none;
 						
@@ -421,7 +444,7 @@ body{
 					top: 104%;
 					left: 57%;
 					transform: translate(-50%,-50%);
-					font-size: 2vh;
+					font-size:  var(--SkillI);
 					font-family: 'Fira Sans', sans-serif;
 					animation: blink 1s linear infinite;
 				}
