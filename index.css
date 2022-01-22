@@ -118,7 +118,7 @@ body{
 				top: 48%;
 				left: 48%;
 				color:#aaa;
-				font-size: 4vh;
+				font-size: var(--W1);
 				font-family: 'Fira Sans', sans-serif;
 				line-height: 5vh;
 				opacity:0;
@@ -131,7 +131,7 @@ body{
 				left: 48%;
 				color:#fff;
 				width: 50%;
-				font-size: 8vh;
+				font-size: var(--W2);
 				font-family: 'Fira Sans', sans-serif;
 				line-height: 5vh;
 				opacity:0;
@@ -145,10 +145,10 @@ body{
 				width: 48%;
 				margin-top: 8%;
 				color: #aaa;
-				font-size: 3vh;
+				font-size: var(--W3);
 				font-family: 'Fira Sans', sans-serif;
 				font-weight: 300;
-				line-height: 3.5vh;
+				//line-height: 3.5vh;
 				opacity:0;
 				transition: top ease-out 0.7s, opacity ease-out 0.7s;
 				//background:red;
