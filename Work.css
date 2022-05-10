@@ -1,18 +1,21 @@
-body{
+body {
 	//padding:0;
 	margin: 0;
+	overflow-x: hidden;
 }
-#loadScreen{
+
+#loadScreen {
 	position: absolute;
 	top: 0;
 	z-index: 100;
 	height: 100vh;
 	width: 100vw;
-	background-color: rgb(0,0,0,1);
-	opacity:1;
+	background-color: rgb(0, 0, 0, 1);
+	opacity: 1;
 	transition: opacity ease-in-out 1s;
 }
-#container{
+
+#container1 {
 	position: absolute;
 	top: 0;
 	height: 100vh;
@@ -20,25 +23,139 @@ body{
 	overflow: hidden;
 	background: black;
 }
-	#bg{
-		height: 100vh;
-		width: 100vw;
-	}
-	#myWorkText{
-		position: absolute;
-		top: 16%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		font-size: 10vmin;
-		color: #ddd;
-	}
-	#expleText{
-		position: absolute;
-		top: 30%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		width: 30%;
-		font-size: 4vmin;
-		text-align: center;
-		color: #444;
-	}
+
+#bg {
+	height: 100vh;
+	width: 100vw;
+}
+
+#myWorkText {
+	position: absolute;
+	top: 16%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 20vmin;
+	color: #ddd;
+}
+
+#arrowDown {
+	position: absolute;
+	top: 88%;
+	left: 60%;
+	transform: translate(-50%, -50%);
+	height: 20vh;
+	width: 20vw;
+
+}
+
+#container2 {
+	position: absolute;
+	top: 100vh;
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+	background: black;
+	border-top: solid 3px #ddd;
+}
+
+#introductionText {
+	position: absolute;
+	top: 4%;
+	left: 50%;
+	transform: translate(-50%, 0);
+	font-size: 15vmin;
+	color: #ddd;
+}
+
+#workBoxesCon {
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, 0);
+	height: 60%;
+	width: 60%;
+	//background: rgb(100, 0, 0, 0.2);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#workBoxesCon a {
+	position: relative;
+	display: block;
+	margin: 4%;
+	height: 50%;
+	aspect-ratio: 1.6/1;
+}
+
+.workBoxes {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	//background: #ccc;
+}
+
+.workImges {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	height: 90%;
+	width: 93%;
+	background: #111;
+	filter: blur(0px);
+	transition: height 0.2s linear, width 0.2s linear, filter 0.2s linear;
+}
+
+.workBoxes:hover .workImges {
+	height: 96%;
+	width: 97%;
+	filter: blur(2px) grayscale(90%) brightness(30%);
+	cursor: pointer;
+}
+
+.projectDescriptions {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	height: 90%;
+	width: 90%;
+	font-size: 3vmin;
+	color: #ddd;
+	text-align: center;
+	opacity: 0;
+	transition: opacity 0.2s ease-in-out;
+}
+
+.workBoxes:hover .projectDescriptions {
+	opacity: 1;
+}
+
+.projectTools {
+	position: absolute;
+	top: 84%;
+	left: 50%;
+	transform: translate(-50%, 0);
+	height: 90%;
+	width: 90%;
+	font-size: 3vmin;
+	color: #ddd;
+	text-align: center;
+	opacity: 0;
+	transition: opacity 0.2s ease-in-out;
+}
+
+.workBoxes:hover .projectTools {
+	opacity: 1;
+}
+
+#workI1 {
+	background-image: url(/img/sitess/QuesSS.png);
+	background-size: 100% 100%;
+}
+
+#workI2 {
+	background-image: url(/img/sitess/BookSS.png);
+	background-size: 100% 100%;
+}

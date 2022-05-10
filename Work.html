@@ -1,54 +1,75 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title></title>
-    <meta name="description" content="" />
-    <meta name="keywords" contetent="" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chome=1" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;500&display=swap"
-      rel="stylesheet"
-    />
-    <!-- font-family: 'Fira Sans', sans-serif;-->
+<head>
+  <meta charset="utf-8" />
+  <title></title>
+  <meta name="description" content="" />
+  <meta name="keywords" contetent="" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chome=1" />
 
-    <link rel="stylesheet" href="Work.css" />
-    <link rel="stylesheet" href="Element-Menu.css" />
-  </head>
-  <body>
-    <div id="menuContainer">
-      <div id="menuColumn">
-        <div id="MHome" class="menuOptions">
-          <div id="IHome" class="menuOptionsIcon"></div>
-          <div id="THome" class="menuOptionsName">Home</div>
-        </div>
-        <div id="MWork" class="menuOptions">
-          <div id="IWork" class="menuOptionsIcon"></div>
-          <div id="TWork" class="menuOptionsName">Work</div>
-        </div>
-        <div id="MContact" class="menuOptions">
-          <div id="IContact" class="menuOptionsIcon"></div>
-          <div id="TContact" class="menuOptionsName">Contact</div>
-        </div>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;500&display=swap" rel="stylesheet" />
+  <!-- font-family: 'Fira Sans', sans-serif;-->
+
+  <link rel="stylesheet" href="Work.css" />
+  <link rel="stylesheet" href="Element-Menu.css" />
+</head>
+
+<body>
+  <div id="menuContainer">
+    <div id="menuColumn">
+      <div id="MHome" class="menuOptions">
+        <div id="IHome" class="menuOptionsIcon"></div>
+        <div id="THome" class="menuOptionsName">Home</div>
+      </div>
+      <div id="MWork" class="menuOptions">
+        <div id="IWork" class="menuOptionsIcon"></div>
+        <div id="TWork" class="menuOptionsName">Work</div>
+      </div>
+      <div id="MContact" class="menuOptions">
+        <div id="IContact" class="menuOptionsIcon"></div>
+        <div id="TContact" class="menuOptionsName">Contact</div>
       </div>
     </div>
-    <div id="loadScreen"></div>
-    <div id="container">
-      <canvas id="bg"></canvas>
-      <div id="myWorkText">My Work</div>
-      <div id="expleText">
-        Unfortunately for now I do not have any projects to show.
-      </div>
+  </div>
+  <div id="loadScreen"></div>
+  <div id="container1">
+    <canvas id="bg"></canvas>
+    <div id="myWorkText">My Work</div>
+    <image id="arrowDown" src="/img/+/Arrow.png">
+  </div>
+  <div id="container2">
+    <div id="introductionText">My Projects</div>
+    <div id="workBoxesCon">
+      <a href="https://jp-project1login.azurewebsites.net/" target="_blank">
+        <div class="workBoxes">
+          <div id="workI1" class="workImges"></div>
+          <div class="projectDescriptions">
+            Site Createrd on request of students, to help them distribute their exercises
+          </div>
+          <div class="projectTools">
+            Tools: PHP, MySQL, JQuery
+          </div>
+        </div>
+      </a>
+      <a href="https://bookajaxjp.azurewebsites.net/" target="_blank">
+        <div class="workBoxes">
+          <div id="workI2" class="workImges"></div>
+          <div class="projectDescriptions">
+            Simple exemple of using public API with AJAX
+          </div>
+          <div class="projectTools">
+            Tools: JS, JQuery
+          </div>
+        </div>
+      </a>
     </div>
-    <script
-      language="JavaScript"
-      type="text/javascript"
-      src="jquery-3.6.0.min.js"
-    ></script>
-    <script type="module" src="Element-Menu.js"></script>
-    <script type="module" src="Work.js"></script>
-  </body>
+  </div>
+  <script language="JavaScript" type="text/javascript" src="jquery-3.6.0.min.js"></script>
+  <script type="module" src="Element-Menu.js"></script>
+  <script type="module" src="Work.js"></script>
+</body>
+
 </html>
