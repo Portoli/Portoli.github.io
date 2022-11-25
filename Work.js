@@ -1,6 +1,4 @@
-import * as THREE from "../build/three.module.js";
-import { OrbitControls } from "./jsm/controls/OrbitControls.js";
-import Object_ButtonLineMesh from "./Module-DecoButton.js";
+
 $(document).ready(function () {
   setTimeout(function () {
     $("#loadScreen").css("opacity", "0");
