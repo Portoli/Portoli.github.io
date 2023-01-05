@@ -78,11 +78,18 @@ body {
 	align-items: center;
 }
 
+.workBoxesCol {
+	height: 100%;
+	width: 50%;
+}
+
 #workBoxesCon a {
 	position: relative;
+	left: 50%;
+	transform: translate(-50%, 0);
 	display: block;
-	margin: 4%;
-	height: 50%;
+	margin-top: 4%;
+	height: 45%;
 	aspect-ratio: 1.6/1;
 }
 
