@@ -197,7 +197,7 @@ $(document).ready(function () {
         $("#MySQL .skillsRate").css("background-position", "40% 0%");
         $("#JQ .skillsRate").css("background-position", "40% 0%");
         $("#THREE .skillsRate").css("background-position", "59% 0%");
-        $("#NODE .skillsRate").css("background-position", "100% 0%");
+        $("#JAVA .skillsRate").css("background-position", "59% 0%");
         $("#BOOTSTRAP .skillsRate").css("background-position", "59% 0%");
       }, 800);
     }, 3300);

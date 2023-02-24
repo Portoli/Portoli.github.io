@@ -1,159 +1,149 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title></title>
-    <meta name="description" content="" />
-    <meta name="keywords" contetent="" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chome=1" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;500&display=swap"
-      rel="stylesheet"
-    />
-    <!-- font-family: 'Fira Sans', sans-serif;-->
+<head>
+  <meta charset="utf-8" />
+  <title></title>
+  <meta name="description" content="" />
+  <meta name="keywords" contetent="" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chome=1" />
 
-    <meta
-      name="viewport"
-      content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi"
-    />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;500&display=swap" rel="stylesheet" />
+  <!-- font-family: 'Fira Sans', sans-serif;-->
 
-    <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" href="Element-Menu.css" />
-  </head>
-  <body>
-    <div id="menuContainer">
-      <div id="menuColumn">
-        <div id="MHome" class="menuOptions">
-          <div id="IHome" class="menuOptionsIcon"></div>
-          <div id="THome" class="menuOptionsName">Home</div>
-        </div>
-        <div id="MWork" class="menuOptions">
-          <div id="IWork" class="menuOptionsIcon"></div>
-          <div id="TWork" class="menuOptionsName">Work</div>
-        </div>
-        <div id="MContact" class="menuOptions">
-          <div id="IContact" class="menuOptionsIcon"></div>
-          <div id="TContact" class="menuOptionsName">Contact</div>
-        </div>
+  <meta name="viewport"
+    content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="Element-Menu.css" />
+</head>
+
+<body>
+  <div id="menuContainer">
+    <div id="menuColumn">
+      <div id="MHome" class="menuOptions">
+        <div id="IHome" class="menuOptionsIcon"></div>
+        <div id="THome" class="menuOptionsName">Home</div>
+      </div>
+      <div id="MWork" class="menuOptions">
+        <div id="IWork" class="menuOptionsIcon"></div>
+        <div id="TWork" class="menuOptionsName">Work</div>
+      </div>
+      <div id="MContact" class="menuOptions">
+        <div id="IContact" class="menuOptionsIcon"></div>
+        <div id="TContact" class="menuOptionsName">Contact</div>
       </div>
     </div>
-    <div id="loadScreen"></div>
-    <div id="container">
-      <canvas id="bg"></canvas>
-      <div id="slideDiv">
-        <div id="startScreen">
-          <div id="Div1_hide"></div>
-          <div id="buttonConteiner">
-            <canvas id="buttonCanvas" width="400px" height="400px"></canvas>
-            <div id="Button">
-              <div id="inButton">Next</div>
-            </div>
+  </div>
+  <div id="loadScreen"></div>
+  <div id="container">
+    <canvas id="bg"></canvas>
+    <div id="slideDiv">
+      <div id="startScreen">
+        <div id="Div1_hide"></div>
+        <div id="buttonConteiner">
+          <canvas id="buttonCanvas" width="400px" height="400px"></canvas>
+          <div id="Button">
+            <div id="inButton">Next</div>
           </div>
-
-          <div id="welcome1">Hello there,</div>
-          <div id="welcome2">I'm Jordan,</div>
-          <div id="welcome3">
-            amateur web developer, just starting my career. Even though I'm an
-            amateur, I've already put in quite a lot of work learning
-            programming, and I'm still trying to learn more.
-          </div>
-          <div id="myPhoto"></div>
         </div>
-        <div id="secondDiv">
-          <div id="Div2_hide"></div>
 
-          <div id="buttonConteiner2">
-            <canvas id="buttonCanvas2" width="400px" height="400px"></canvas>
-            <div id="Button2">
-              <div id="inButton2">Back</div>
-            </div>
-          </div>
+        <div id="welcome1">Hello there,</div>
+        <div id="welcome2">I'm Jordan,</div>
+        <div id="welcome3">
+          amateur web developer, just starting my career. Even though I'm an
+          amateur, I've already put in quite a lot of work learning
+          programming, and I'm still trying to learn more.
+        </div>
+        <div id="myPhoto"></div>
+      </div>
+      <div id="secondDiv">
+        <div id="Div2_hide"></div>
 
-          <div id="buttonConteiner3">
-            <canvas id="buttonCanvas3" width="400px" height="400px"></canvas>
-            <div id="Button3">
-              <div id="inButton3">Work</div>
-            </div>
+        <div id="buttonConteiner2">
+          <canvas id="buttonCanvas2" width="400px" height="400px"></canvas>
+          <div id="Button2">
+            <div id="inButton2">Back</div>
           </div>
+        </div>
 
-          <div id="aboutMeTheme">About Me</div>
-          <div id="aboutMe1" class="aboutMe">
-            My programming adventure began with PLC programming. Although it is
-            not related to web development, it did start my interest in
-            programming.
+        <div id="buttonConteiner3">
+          <canvas id="buttonCanvas3" width="400px" height="400px"></canvas>
+          <div id="Button3">
+            <div id="inButton3">Work</div>
           </div>
-          <div id="aboutMe2" class="aboutMe">
-            The first web programming language I learned was C ++ and I spent a
-            lot of time learning it, both basic and advanced object-oriented
-            programming. Then I started learning other languages ​​related to
-            web development, which I will present in the following.
+        </div>
+
+        <div id="aboutMeTheme">About Me</div>
+        <div id="aboutMe1" class="aboutMe">
+          My programming adventure began with PLC programming. Although it is
+          not related to web development, it did start my interest in
+          programming.
+        </div>
+        <div id="aboutMe2" class="aboutMe">
+          The first web programming language I learned was C ++ and I spent a
+          lot of time learning it, both basic and advanced object-oriented
+          programming. Then I started learning other languages ​​related to
+          web development, which I will present in the following.
+        </div>
+        <div id="skillsContainer">
+          <div id="leftSkills">
+            <div id="Cpp" class="skills">
+              <div class="skillsName">C++</div>
+              <div class="skillsRate">-----</div>
+            </div>
+            <div id="HTML" class="skills">
+              <div class="skillsName">HTML</div>
+              <div class="skillsRate">-----</div>
+            </div>
+            <div id="CSS" class="skills">
+              <div class="skillsName">CSS</div>
+              <div class="skillsRate">-----</div>
+            </div>
+            <div id="JS" class="skills">
+              <div class="skillsName">JS</div>
+              <div class="skillsRate">-----</div>
+            </div>
+            <div id="PHP" class="skills">
+              <div class="skillsName">PHP</div>
+              <div class="skillsRate">-----</div>
+            </div>
           </div>
-          <div id="skillsContainer">
-            <div id="leftSkills">
-              <div id="Cpp" class="skills">
-                <div class="skillsName">C++</div>
-                <div class="skillsRate">-----</div>
-              </div>
-              <div id="HTML" class="skills">
-                <div class="skillsName">HTML</div>
-                <div class="skillsRate">-----</div>
-              </div>
-              <div id="CSS" class="skills">
-                <div class="skillsName">CSS</div>
-                <div class="skillsRate">-----</div>
-              </div>
-              <div id="JS" class="skills">
-                <div class="skillsName">JS</div>
-                <div class="skillsRate">-----</div>
-              </div>
-              <div id="PHP" class="skills">
-                <div class="skillsName">PHP</div>
-                <div class="skillsRate">-----</div>
-              </div>
+          <div id="rightSkills">
+            <div id="MySQL" class="skills">
+              <div class="skillsName">MySQL</div>
+              <div class="skillsRate">-----</div>
             </div>
-            <div id="rightSkills">
-              <div id="MySQL" class="skills">
-                <div class="skillsName">MySQL</div>
-                <div class="skillsRate">-----</div>
-              </div>
-              <div id="JQ" class="skills">
-                <div class="skillsName">JQ</div>
-                <div class="skillsRate">-----</div>
-              </div>
-              <div id="THREE" class="skills">
-                <div class="skillsName">THREE.JS</div>
-                <div class="skillsRate">-----</div>
-              </div>
-              <div id="BOOTSTRAP" class="skills">
-                <div class="skillsName">BOOTSTRAP</div>
-                <div class="skillsRate">-----</div>
-              </div>
-              <div id="NODE" class="skills" style="opacity: 0">
-                <div class="skillsName">NODE.JS</div>
-                <div class="skillsRate">-----</div>
-              </div>
+            <div id="JQ" class="skills">
+              <div class="skillsName">JQ</div>
+              <div class="skillsRate">-----</div>
             </div>
-            <div id="instraction">
-              Rating based on
-              <a
-                href="https://icombine.net/knowledge-base/skill-levels"
-                target="_blank"
-                >Link</a
-              >
+            <div id="THREE" class="skills">
+              <div class="skillsName">THREE.JS</div>
+              <div class="skillsRate">-----</div>
             </div>
+            <div id="BOOTSTRAP" class="skills">
+              <div class="skillsName">BOOTSTRAP</div>
+              <div class="skillsRate">-----</div>
+            </div>
+            <div id="JAVA" class="skills">
+              <div class="skillsName">JAVA</div>
+              <div class="skillsRate">-----</div>
+            </div>
+          </div>
+          <div id="instraction">
+            Rating based on
+            <a href="https://icombine.net/knowledge-base/skill-levels" target="_blank">Link</a>
           </div>
         </div>
       </div>
     </div>
-    <script
-      language="JavaScript"
-      type="text/javascript"
-      src="jquery-3.6.0.min.js"
-    ></script>
-    <script type="module" src="Element-Menu.js"></script>
-    <script type="module" src="index.js"></script>
-  </body>
+  </div>
+  <script language="JavaScript" type="text/javascript" src="jquery-3.6.0.min.js"></script>
+  <script type="module" src="Element-Menu.js"></script>
+  <script type="module" src="index.js"></script>
+</body>
+
 </html>
